@@ -1,0 +1,8 @@
+{#
+Ubuntu network boot images
+http://cdimage.ubuntu.com/netboot/
+#}
+
+kernel http://archive.ubuntu.com/ubuntu/dists/{{ version }}/main/installer-amd64/current/images/netboot/ubuntu-installer/amd64/linux -- quiet initrd=initrd.gz
+initrd http://archive.ubuntu.com/ubuntu/dists/{{ version }}/main/installer-amd64/current/images/netboot/ubuntu-installer/amd64/initrd.gz
+boot

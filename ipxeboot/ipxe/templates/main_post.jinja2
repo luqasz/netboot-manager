@@ -1,0 +1,10 @@
+menu Choose an operating system to boot
+item debian     Debian
+item ubuntu     Ubuntu
+choose os && goto ${os}
+
+:debian
+chain {{ base_url }}/debian/stretch
+
+:ubuntu
+chain {{ base_url }}/ubuntu/bionic

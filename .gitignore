@@ -1,0 +1,29 @@
+# Misc
+*~
+.tox
+.env
+tmp
+.DS_Store
+
+# python compiled files
+*.py[cod]
+__pycache__
+
+# package related files / dirs
+*.deb
+dist
+build
+sdist
+MANIFEST
+.project
+*.egg-info
+*.egg
+
+# cache
+.cache
+.pytest_cache
+
+# IDE stuff
+.idea
+.pydevproject
+.vscode

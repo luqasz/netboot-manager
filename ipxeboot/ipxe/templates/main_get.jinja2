@@ -1,0 +1,12 @@
+{% macro ipxe_params(name, variables) %}
+
+params --name {{ name }}
+{% for http_var, ipxe_var in variables.items() -%}
+    param --params {{ name }} {{ http_var }} {{ ipxe_var }}
+{% endfor %}
+
+{% endmacro %}
+
+{{ ipxe_params(name='hostinfo', variables=variables) }}
+
+chain {{ base_url }}/##params=hostinfo
