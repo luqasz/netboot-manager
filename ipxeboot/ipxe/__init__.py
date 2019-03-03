@@ -60,8 +60,6 @@ def boot_options_adapter(obj):
     header=IPXE_HEADER_REGEXP,
 )
 def main_menu_get(request):
-    log.debug("matchdict %s", request.matchdict)
-    log.debug("params %s", request.params)
     return IpxeOptions(
         name='main_get',
         params=dict(
@@ -77,8 +75,6 @@ def main_menu_get(request):
     header=IPXE_HEADER_REGEXP,
 )
 def main_menu_post(request):
-    log.debug("matchdict %s", request.matchdict)
-    log.debug("params %s", request.params)
     return IpxeOptions(
         name='main_post',
         params=dict(

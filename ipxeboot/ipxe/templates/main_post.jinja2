@@ -8,3 +8,12 @@ chain {{ base_url }}/debian/stretch
 
 :ubuntu
 chain {{ base_url }}/ubuntu/bionic
+
+{#
+Sample how to take screenshots. Taken from https://ipxe.org/cfg/vram
+
+chain -a http://boot.ipxe.org/memtest.0 onepass onefail ||
+params
+param screenshot ${vram}
+chain -a {{ base_url }}/screenshot/##params
+#}

@@ -1,13 +1,4 @@
-import os
-
 from setuptools import setup
-
-
-requires = [
-    'pyramid',
-    'pyramid_jinja2',
-    'sentry_sdk',
-]
 
 
 setup(
@@ -28,5 +19,4 @@ setup(
     ],
     include_package_data=True,
     zip_safe=False,
-    install_requires=requires,
 )
